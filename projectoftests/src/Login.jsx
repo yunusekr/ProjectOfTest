@@ -82,7 +82,7 @@ export default function Login() {
     return re.test(email);
   };
   console.log(errors);
-  const git = (event) => {
+  const successLogin = (event) => {
     history.push("/success");
   };
   console.log(errors);
@@ -129,7 +129,7 @@ export default function Login() {
         {errors.terms && <FormFeedback>{errors.terms}</FormFeedback>}
       </FormGroup>
       <FormGroup className="text-center p-4">
-        <Button color="primary" disabled={!isValid} onClick={git}>
+        <Button color="primary" disabled={!isValid} onClick={successLogin}>
           Sign In
         </Button>
       </FormGroup>
